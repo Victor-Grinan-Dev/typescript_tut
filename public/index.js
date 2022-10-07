@@ -1,11 +1,11 @@
 "use strict";
-var sale = 123456789;
-var course = 'typescript';
-var published = true;
-var level;
-var numbers = [];
-numbers.forEach(function (n) { return n * n; });
-var user = [1, 'victor'];
+let sale = 123456789;
+let course = 'typescript';
+let published = true;
+let level;
+let numbers = [];
+numbers.forEach(n => n * n);
+let user = [1, 'victor'];
 user.push(1);
 var Size;
 (function (Size) {
@@ -14,29 +14,28 @@ var Size;
     Size[Size["Large"] = 3] = "Large";
 })(Size || (Size = {}));
 ;
-var mySize = Size.Medium;
+let mySize = Size.Medium;
 console.log(mySize);
 ;
-var mySize1 = 2;
+let mySize1 = 2;
 console.log(mySize);
-function taxCalc(income, taxYear) {
-    if (taxYear === void 0) { taxYear = 2022; }
+function taxCalc(income, taxYear = 2022) {
     if (taxYear < 2022)
         return income * 1.2;
     return income * 1.3;
 }
 taxCalc(10000, 2022);
-var employee = {
+let employee = {
     id: 1,
     name: 'Victor',
-    retire: function (date) {
+    retire: (date) => {
         console.log(date);
     }
 };
-var employee1 = {
+let employee1 = {
     id: 1,
     name: "Machete",
-    retire: function (date) {
+    retire: (date) => {
         console.log(date);
     }
 };
@@ -47,12 +46,12 @@ function kgToLbs(weight) {
         return parseInt(weight) * 2.2;
 }
 ;
-var textBox = {
-    drag: function () { },
-    resize: function () { }
+let textBox = {
+    drag: () => { },
+    resize: () => { }
 };
-var quantity = 100;
-var distance = "cm";
+let quantity = 100;
+let distance = "cm";
 function greet(name) {
     if (name)
         console.log(name.toUpperCase());

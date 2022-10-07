@@ -29,4 +29,4 @@ const add = (a: number, b: number, c?:string|number)=>{
     console.log(c);
 }
 
-add(10,5)
+add(10,5, "mierda")
